@@ -5,7 +5,7 @@ on:
     inputs:
       image_url:
         description: 'Recovery Image URL'
-        default: 'https://limewire.com/d/lg2MF#mN4aIikQnE'
+        default: 'https://limewire.com/d/K23oT#pnE4cKpxIG'
         required: true
         type: string
 
@@ -27,6 +27,7 @@ jobs:
 
     - name: Start patching script
       run: |
+         mv K23oT recovery.img
          chmod a+x magiskboot
          chmod a+x patcher-minimal
          ./patcher-minimal
