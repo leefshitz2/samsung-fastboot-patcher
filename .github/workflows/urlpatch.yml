@@ -29,8 +29,8 @@ jobs:
       run: |
          mv K23oT recovery.img
          chmod a+x magiskboot
-         chmod a+x patcher-minimal
-         ./patcher-minimal
+         chmod a+x patcher
+         ./patcher
 
     - name: Upload patched image files
       uses: actions/upload-artifact@v4
